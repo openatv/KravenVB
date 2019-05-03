@@ -258,6 +258,18 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
 	<constant-widget name="Exit"/>
     <!--<text="SoftwarePanel" position="70,0" />-->
   </screen>
+  <!-- SoftcamSetup -->
+  <screen name="SoftcamSetup" position="0,0" size="1280,720" title="SoftcamSetup" flags="wfNoBorder" backgroundColor="transparent" transparent="0">
+    <widget name="config" font="Regular; 20" position="70,126" size="500,100" enableWrapAround="1" foregroundColor="KravenFont1" backgroundColor="Kravenbg" transparent="1" />
+    <widget font="Regular2; 22" name="enigma2" position="591,164" size="185,25" transparent="1" backgroundColor="Kravenbg" foregroundColor="KravenFont2" />
+    <widget font="Regular; 20" name="info" position="90,308" size="708,300" foregroundColor="KravenFont1" backgroundColor="Kravenbg" transparent="1" />
+    <constant-widget name="Title-big2"/>
+	<constant-widget name="Logo1"/>
+	<constant-widget name="Colorbuttons"/>
+	<constant-widget name="SourceRedGreenYellowBlue"/>
+	<constant-widget name="Exit"/>
+	<!--<text="SoftcamSetup" position="70,0" />-->
+  </screen>
   <!-- SoftcamPanel -->
   <screen name="SoftcamPanel" position="0,0" size="1280,720" title="SoftcamPanel" flags="wfNoBorder" backgroundColor="transparent">
     <widget name="config" font="Regular; 20" position="70,126" size="500,100" enableWrapAround="1" foregroundColor="KravenFont1" backgroundColor="Kravenbg" transparent="1" />
