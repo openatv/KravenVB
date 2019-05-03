@@ -990,7 +990,7 @@
     <!--<text="YoutubeTVWindow" position="70,0" />-->
   </screen>
   <!-- EPGImport Filter Config -->
-  <screen name="Config" position="0,0" size="1280,720" title="EPG Import Configuration" backgroundColor="transparent" flags="wfNoBorder" >
+  <screen name="EPGImportConfig" position="0,0" size="1280,720" title="EPG Import Configuration" backgroundColor="transparent" flags="wfNoBorder" >
     <constant-widget name="Title-big"/>
 	<widget backgroundColor="Kravenbg3" name="config" font="Regular;22" foregroundColor="KravenFont1" itemHeight="30" position="70,80" size="708,450" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="1" />	
 	<widget name="statusbar" position="70,590" halign="center" size="708,30" backgroundColor="Kravenbg3" foregroundColor="KravenFont2" transparent="1" font="Regular;22" />
