@@ -12,6 +12,14 @@ gettext.bindtextdomain("enigma2", resolveFilename(SCOPE_LANGUAGE))
 gettext.textdomain("enigma2")
 gettext.bindtextdomain("KravenVB", "%s%s" % (resolveFilename(SCOPE_PLUGINS), "Extensions/KravenVB/locale/"))
 
+distro="other"
+try:
+	from boxbranding import getImageDistro
+	distro=getImageDistro()
+except ImportError:
+	pass
+
+
 def _(txt):
 	t = gettext.dgettext("KravenVB", txt)
 	if t == txt:
