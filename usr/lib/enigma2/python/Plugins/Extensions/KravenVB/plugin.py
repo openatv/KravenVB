@@ -26,9 +26,23 @@ def main(session, **kwargs):
 		import traceback
 		traceback.print_exc()
 
+def main_menu(menuid):
+	if menuid == "system":
+		return [("KravenVB", main, _("Configuration tool for KravenVB"), 27)]
+	else:
+		return []
+
 def Plugins(**kwargs):
+	list = []
+	if distro =='openatv':
+		list.append(PluginDescriptor(name="Setup KravenVB", description=_("Configuration tool for KravenVB"), where = PluginDescriptor.WHERE_MENU, fnc = main_menu))
+	# TODO 2019-08-09 - Uncomment and indent to avoid hooking plugins menu:
+	#else:
 	screenwidth = getDesktop(0).size().width()
 	if screenwidth and screenwidth == 1920:
-		return [PluginDescriptor(name="KravenVB", description=_("Configuration tool for KravenVB"), where = PluginDescriptor.WHERE_PLUGINMENU, icon='pluginfhd.png', fnc=main)]
+		list.append(PluginDescriptor(name="KravenVB", description=_("Configuration tool for KravenVB"), where = PluginDescriptor.WHERE_PLUGINMENU, icon='pluginfhd.png', fnc=main))
 	else:
-		return [PluginDescriptor(name="KravenVB", description=_("Configuration tool for KravenVB"), where = PluginDescriptor.WHERE_PLUGINMENU, icon='plugin.png', fnc=main)]
+		list.append(PluginDescriptor(name="KravenVB", description=_("Configuration tool for KravenVB"), where = PluginDescriptor.WHERE_PLUGINMENU, icon='plugin.png', fnc=main))
+	# END TODO
+	return list
+
