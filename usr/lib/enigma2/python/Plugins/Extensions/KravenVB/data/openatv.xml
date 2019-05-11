@@ -1,4 +1,9 @@
+  <switchpixmap>
+    <pixmap name="menu_on" filename="KravenVB/icons/menu_on.png" />
+    <pixmap name="menu_off" filename="KravenVB/icons/menu_off.png" />
+  </switchpixmap>
   <!-- AboutOE -->
+  </switchpixmap>
   <screen name="AboutOE" position="0,0" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel text="OPEN SOURCE" position="70,80" size="708,36" font="Regular2;26" foregroundColor="KravenFont2" transparent="1" valign="center" />
     <eLabel backgroundColor="Kravenbg3" text="https://github.com/openatv" font="Regular;20" foregroundColor="KravenFont2" position="70,127" size="352,25" transparent="1" zPosition="1" />
