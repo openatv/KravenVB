@@ -621,6 +621,7 @@
     <constant-widget name="Title-big"/>
 	<!-- Logo -->
     <constant-widget name="Colorbuttons"/>
+    <constant-widget name="SourceRedGreenYellowBlue"/>
     <constant-widget name="OKExit"/>
     <!--<text="Console" position="70,0" />-->
   </screen>
